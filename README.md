@@ -12,7 +12,7 @@
     2. You can vote
     3. You can drive
     4. You can't legally drink, but your mates/uncles might have your back (bigger 16)
-    5. Your too young, go back to school!
+    5. You're too young, go back to school!
     
     
 * User Stories:

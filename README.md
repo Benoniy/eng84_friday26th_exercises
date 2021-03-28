@@ -4,7 +4,7 @@
 
 30 Minutes
 
-### Tasks
+### Tasks:
   ***Create a simple program that uses control flow!***
 
 * Potential outcomes for the program:
@@ -31,6 +31,10 @@
 * It Handles strings and integers
 * It has an exit condition
 * All of the business logic works
+
+### Solution:  
+1. First I
+
 -----------------------------------------------------------------
 # Your Hero Story!
 
@@ -38,7 +42,7 @@
 
 30-50 Minutes
 
-### Tasks
+### Tasks:
 ***You're going to write a story, cut it into sections and then store the sections in a python dictionary!***
 
 
@@ -70,5 +74,9 @@
 
 * All 7 tasks are done
 * Runs with no errors
-* Tell a story
+* Tell a story  
+
+### Solution:  
+
+
 --------------------------------------------------------------------

@@ -30,10 +30,59 @@
 * It's a program that run's continuously
 * It Handles strings and integers
 * It has an exit condition
-* All of the business logic works
+* All the business logic works
 
 ### Solution:  
-1. First I
+  ***The solution for this task is located in [control_flow_age_and_permission.py]()***
+1. First I created two functions to allow the user to supply their age and license status, these are used later on in the code.
+    ```python
+    # Gets the age of the user
+    def get_age():
+        age_input = input("What is your age?: ")
+        while not age_input.isdigit():
+            age_input = input("Please enter you age using digits: ")
+        return int(age_input)
+    
+    
+    # Gets the license status of the user
+    def get_license():
+        license_input = input("Do you have a driving license?: ")
+        while not license_input.lower() in ("y", "n"):
+            license_input = input("Please enter you answer using y or n: ")
+        return license_input == "y"
+    ```
+2. Then I created a while loop to fulfill the user requirement that the program should be continuous until "exit" is used.
+    ```python
+    # Makes the program continuous
+    while True:
+        # Give the user an opportunity to exit the program
+        user_input = input("\nLets see if you can vote! (continue or exit): ")
+        if user_input.lower().count("exit") > 0:
+            break
+    ```
+3. Finally, I called the functions that I had created before to supply information about the user and then used that to construct  
+an if statement that houses the primary logic of the program.
+    ```python
+    # Get the users age and license status
+    age = get_age()
+    driver_license = get_license()
+
+    if age < 16:  # If the user is too young to do anything
+        print("You're too young, go back to school!")
+        continue
+    elif age < 18:  # If the user is just old enough to potentially drive but not drink
+        print("You can't legally drink, but your mates/uncles might have your back (bigger 16)")
+        if driver_license:
+            print("You can legally drive")
+    elif age > 17:  # If the user is old enough to drink and vote and potentially drive
+        print("You can legally drink")
+        print("You can legally vote", end=" ")
+        if driver_license:
+            print("and you can legally drive")
+        else:
+            print("but you cant legally drive")
+
+    ```
 
 -----------------------------------------------------------------
 # Your Hero Story!

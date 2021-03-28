@@ -33,7 +33,7 @@
 * All the business logic works
 
 ### Solution:  
-  ***The solution for this task is located in [control_flow_age_and_permission.py]()***
+  ***The solution for this task is located in [control_flow_age_and_permission.py](https://github.com/Benoniy/eng84_friday26th_exercises/blob/main/control_flow_age_and_permission.py)***
 1. First I created two functions to allow the user to supply their age and license status, these are used later on in the code.
     ```python
     # Gets the age of the user
@@ -126,6 +126,53 @@ an if statement that houses the primary logic of the program.
 * Tell a story  
 
 ### Solution:  
-
-
+  ***The solution for this task is located in [hero_story.py](https://github.com/Benoniy/eng84_friday26th_exercises/blob/main/hero_story.py)***
+1. I started by defining my dictionary which used 'start', 'middle' and 'end' for the keys and my story for the values.
+    ```python
+    story1 = {"start": "Once upon a time there was a sleepy boy",
+              "middle": "everytime he slept he nightmares of SQL",
+              "end": "one day he conquered SQL and avenged the maiden Ayaz"
+              }
+    ```
+2. I then used a for loop to print the entire dictionary in a nice format
+    ```python
+    # Print the entire dictionary
+    print("\nPrint the entire dictionary:")
+    for key, val in story1.items():
+        print(key + ":", val)
+    ```
+3. Next I printed the type of the dictionary using the type() method
+    ```python
+    # Print the type of your dictionary
+    print("\nPrint the type of your dictionary:")
+    print(type(story1))
+    ```
+4. Next I printed only the keys in a nice format using a for loop
+    ```python
+    # Print only the keys
+    print("\nPrint only the keys:")
+    for key in story1.keys():
+        print(key)
+    ```
+5. In the very same way I also printed the values in a nice format
+    ```python
+    # Print only the values
+    print("\nPrint only the values:")
+    for val in story1.values():
+        print(val)
+    ```
+6. Next using individual print statements, I printed each part of the story in order 
+    ```python
+    # Print the individual values using the keys (individually, lots of print commands)
+    print("\nPrint the individual values using the keys:")
+    print(story1["start"])
+    print(story1["middle"])
+    print(story1["end"])
+    ```
+7. Finally, I added a new key value pair to the dictionary to hold the name of my hero and then printed it
+    ```python
+    # Now let's add a new key:value pair
+    story1["hero"] = "Arun"
+    print("hero: " + story1["hero"])
+    ```
 --------------------------------------------------------------------
